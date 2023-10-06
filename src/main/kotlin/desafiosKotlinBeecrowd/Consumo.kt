@@ -4,11 +4,12 @@ import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
 
-import java.do.File
-import java.in.InputStream
+//import java.do.File
+//import java.in.InputStream
 
 
-//import java.util.Locale
+import java.util.Locale
+import java.util.Scanner
 import java.util.Locale as Locale1
 
 fun main() {
@@ -18,22 +19,11 @@ fun main() {
 
         Locale1.setDefault(locale)
 
-
-
-        println(Locale1.getDefault())
-
         val x: Int
         val y: Double
 
 
-
-
-
-
-        val bdr = File
-
-
-
+        val bdr = Scanner(System.`in`)
 
         x = bdr.nextInt()
         bdr.nextLine()
@@ -51,16 +41,9 @@ fun main() {
 
         println("$round km/l")
 
-
-//        println("$formattedCurrency km/l")
-
-
-
         bdr.close()
+
     } catch(e: IOException) {
         e.printStackTrace()
     }
-
-
-
 }
